@@ -1,0 +1,69 @@
+
+abstract class Polygon {
+
+    abstract fun draw()
+
+    fun square()
+    {
+        println("abcdefgh")
+    }
+
+    open val vertexCount: Int = 0
+
+    abstract val vritant : Int
+
+    interface AC{
+        val ghi : Int
+            get() = 5
+    }
+}
+
+class Rectangle : Polygon(),ABC,BCD,Polygon.AC {
+
+    override fun draw() {
+        println("This is overriden abstract method of polygon class")
+    }
+
+    override val vertexCount = 4
+
+    override val vritant = 10
+
+    override fun asd() {
+        super.asd()
+    }
+
+    /*override fun ghj(a: Int, b: Int): Int {
+        return a+b
+    }*/
+
+    override val ghi: Int
+        get() = super.ghi
+
+    override fun ghj(a: Int, b: Int): Int {
+        TODO("Not yet implemented")
+    }
+
+}
+
+fun main(args: Array<String>) {
+    val a = Rectangle().apply { draw()
+    println(vertexCount)
+    asd()
+    //println(ghj(9,11))
+    println(ghi)
+    }
+
+    val b = BCD{a: Int, b: Int -> a+b }
+    println(b.ghj(7,3))
+}
+
+interface ABC{
+    fun asd()
+    {
+        println("interface")
+    }
+}
+
+fun interface BCD{
+    fun ghj(a:Int,b:Int) : Int
+}
