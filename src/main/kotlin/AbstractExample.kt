@@ -18,7 +18,8 @@ abstract class Polygon {
     }
 }
 
-class Rectangle : Polygon(),ABC,BCD,Polygon.AC {
+class Rectangle : Polygon(),ABC,BCD,Polygon.AC
+ {
 
     override fun draw() {
         println("This is overriden abstract method of polygon class")
@@ -31,6 +32,7 @@ class Rectangle : Polygon(),ABC,BCD,Polygon.AC {
     override fun asd() {
         super.asd()
     }
+
 
     /*override fun ghj(a: Int, b: Int): Int {
         return a+b
@@ -53,8 +55,17 @@ fun main(args: Array<String>) {
     println(ghi)
     }
 
+    val l = object : BCD{
+        override fun ghj(a: Int, b: Int): Int {
+            return a+b
+        }
+
+    }
+    println( l.ghj(10,61))
+
     val b = BCD{a: Int, b: Int -> a+b }
     println(b.ghj(7,3))
+
 }
 
 interface ABC{
@@ -66,4 +77,5 @@ interface ABC{
 
 fun interface BCD{
     fun ghj(a:Int,b:Int) : Int
+
 }
