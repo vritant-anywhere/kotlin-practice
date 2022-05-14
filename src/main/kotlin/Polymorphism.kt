@@ -13,6 +13,7 @@ open class Polymorphism {
     open fun multiply(c:Int,d:Int) : Int{
         return c*d.also { println("This is overriding method 1") }
     }
+
 }
 
 class MethodOverriding : Polymorphism()

@@ -1,4 +1,4 @@
-private open class FatherC{
+open class FatherC{
     fun fatherIdentity(){
         println("I am a Father.")
     }

@@ -15,8 +15,8 @@ open class vritant{
                 /*println(a)
                 a++*/
                 if (instance == null) {
-                    println(a)
-                    a++
+                    /*println(a)
+                    a++*/
                     instance = vritant()
                 }
 
@@ -53,14 +53,6 @@ val ab = object : vritant(){
     }
 }
 
-object yu{
-    fun ii()
-    {
-
-    }
-}
-
-
 fun main(args: Array<String>) {
 
     println(friday)
@@ -68,7 +60,6 @@ fun main(args: Array<String>) {
 
     ab.ll()
 
-    yu.ii()
 
     val instance = vritant.getInstance()
     vritant.yui()

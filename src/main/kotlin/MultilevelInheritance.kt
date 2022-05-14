@@ -14,6 +14,7 @@ open class SonB: FatherB(){
         println("I am a GrandSon.")
     }
 }
+
 fun main(args: Array<String>) {
 
     val g = GrandSon()

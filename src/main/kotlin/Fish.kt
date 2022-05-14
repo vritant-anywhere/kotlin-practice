@@ -1,4 +1,3 @@
-import java.util.Random
 
 class Fish(friendly : Boolean = true, var volumeNeeded:Int) {
 
@@ -9,7 +8,7 @@ class Fish(friendly : Boolean = true, var volumeNeeded:Int) {
 
     constructor(b:Int,c:Int) : this(volumeNeeded = 5)
     {
-        val fish = Fish(5)
+        //val fish = Fish(5)
         println("2nd const $b , $c")
     }
 
@@ -57,11 +56,11 @@ fun main(args: Array<String>) {
         writeToLog(it.toString())
     }
 
-    val ans = fish.apply { sum(4,5) }
-    val an = fish.run { sum(4,5) }
+    val ans1 = fish.apply { sum(4,5) }
+    val ans2 = fish.run { sum(4,5) }
 
-    println(ans)
-    println(an)
+    println(ans1)
+    println(ans2)
 
     fish.sum(81,19).let { println(it)
     if (it<50) println("less than 50") else println("greater than or equal to 50")
@@ -95,8 +94,5 @@ fun main(args: Array<String>) {
     val number = mutableListOf("one", "two", "three").add("four").also { println("The list elements after adding new one: $it") }
     println(number)
     //numbers
-
-
-
 
 }

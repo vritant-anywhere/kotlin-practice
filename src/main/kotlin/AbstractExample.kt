@@ -55,6 +55,17 @@ fun main(args: Array<String>) {
     println(ghi)
     }
 
+    val obj = object : Polygon()
+    {
+        override fun draw() {
+            TODO("Not yet implemented")
+        }
+
+        override val vritant: Int
+            get() = TODO("Not yet implemented")
+
+    }
+
     val l = object : BCD{
         override fun ghj(a: Int, b: Int): Int {
             return a+b
@@ -65,6 +76,14 @@ fun main(args: Array<String>) {
 
     val b = BCD{a: Int, b: Int -> a+b }
     println(b.ghj(7,3))
+
+    val i = object : ABC{
+        override fun asd() {
+            super.asd()
+        }
+    }
+
+    i.asd()
 
 }
 
