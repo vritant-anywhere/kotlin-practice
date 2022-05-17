@@ -1,4 +1,6 @@
 import java.util.LinkedList
+import java.util.Stack
+import java.util.Vector
 
 fun printAll(strings: Collection<String?>) {
     for(s in strings) print("$s ")
@@ -131,5 +133,25 @@ fun main(args: Array<String>) {
         print("${listIterator.previousIndex()} ${listIterator.previous()} ".trim())
         println()
     }
+
+    val arrayList = ArrayList<MutableSet<Int>>()
+    arrayList.add(copySet)
+    arrayList.add(list2.toMutableSet())
+
+    for (i in arrayList)
+    {
+        printAll(i)
+    }
+
+    val setOfArrayList = setOf(arrayList)
+    println(setOfArrayList)
+
+    val setOfMap = setOf(numbersMap,map)
+    println(setOfMap)
+
+    val map2 : MutableMap<Char,Int> = mutableMapOf()
+    println( map2.put('a',4))
+    println(map2.put('b',2))
+    println(map2.put('a',3))
 
 }
