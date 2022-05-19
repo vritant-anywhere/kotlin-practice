@@ -153,5 +153,10 @@ fun main(args: Array<String>) {
     println( map2.put('a',4))
     println(map2.put('b',2))
     println(map2.put('a',3))
+    map2.put('z',26)
+    println( map2.put('g',26).hashCode())
+
+    map2['a']?.let { println(it.equals(map2.put('a',5))) }
+
 
 }
