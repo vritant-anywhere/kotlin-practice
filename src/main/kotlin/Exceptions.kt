@@ -8,7 +8,6 @@ fun main() {
     {
         println(e)
         println("You are doing wrong something")
-        a/1
     }
     finally {
         println("Finally block executed ")
@@ -16,9 +15,11 @@ fun main() {
     println(result)
 
 
-    val b : String? = "Vritant"
+    val b : String? = null
     val res = b ?: throw Exception("Result is required")
+
     println(res)
     println("Hello is printed")
+
 
 }

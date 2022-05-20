@@ -153,6 +153,7 @@ fun main(args: Array<String>) {
     println( map2.put('a',4))
     println(map2.put('b',2))
     println(map2.put('a',3))
+    println(map2['a'])
     map2.put('z',26)
     println( map2.put('g',26).hashCode())
 
